@@ -61,7 +61,7 @@ fun SimplePager(initialPage: Int) {
     if (pagerState.currentPage != initialPage) {
         LaunchedEffect(initialPage, pagerState) {
             if (initialPage <= pagerState.pageCount) {
-                Log.d("MonthPicker", "Scrolling to $initialPage")
+                Log.d("SimplePager", "Scrolling to $initialPage")
                 pagerState.animateScrollToPage(initialPage)
             }
         }
